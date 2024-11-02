@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+header {
+/* cabeçalho */
+background-color: hsl(209, 83%, 56%);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2px;
+}
+/* estrutura */
+.estrulogo {
+    display: flex;
+    align-items: center;
+}
+/* imagemlogo */
+.imagemlogo {
+    margin-left: 250px;
+    margin-top: 5px;
+}
+
+/* menu */
+.menu li img {
+    height: 18px;
+  }
+.menu {
+    margin-right: 200px ;
+    margin-top: 5px;
+  
+}
+
+.menu ul li{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1px;
+
+}
+.menu ul li a {
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu li:hover {
+    background-color: rgba(214, 214, 255, 0.781);
+    
+}
+/* coluna */
+.divisoria {
+    background-color: rgb(38, 74, 121);
+    width: auto;
+    height: 2px;
+}
+.separartab {
+
+display: flex;
+justify-content: space-between;
+}
+
+
+/* coluna direira e esquerda */
+
+.tabeladir 
+{   
+flex-grow: 1;
+
+background-color: hsla(209, 83%, 56%, 0.822);
+
+}
+
+.area /* coluna principal de texto */ {
+    width: 1300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.918);
+    padding-bottom: 10px;
+
+}
+
+.estruta {
+
+    display: flex;
+    flex-direction: column;
+
+}
+/* area abaixo do cabeçalho */
+.areaacima {
+height: 150px;
+width: auto;
+background-color: rgba(21, 67, 218, 0.63);
+align-items: center;
+}
+/* Imagens ilustrativas */
+.imagensilustrando {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: auto;
+    border-color: black;
+    justify-content: center;
+img{
+    border: 5px outset;
+    border-color: black;
+    border-style: solid;
+}
+}
+/* titulo */
+.textotitulo
+{
+    display: flex;
+    flex-direction: column;
+    object-position: center;
+    margin-left: 16%;
+h1 { font-size: 50px;}
+}
+/* imagem preço */
+.imagempreco {  
+
+margin-left:29%;
+margin-bottom: 10px;
+
+
+}
+
+.imagemprecodireto {
+
+    width: 60%;
+    height: auto;
+
+}
+
+body {
+    background-image: url('imagens/imagens/tecnico2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover ;
+}
+/* iimagem de fundo */
+
+
+.textosubtitulo {
+    display: flex;
+    width: 100px;
+    position: static;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    width: auto
+}
+
+.formatsub{
+    font-size: 40px;
+    font-family: Lucida Handwriting, Brush Script MT, Cursive;
+    object-position: center;
+    justify-content: center;
+    
+    }
+
+/*texto abaixo do titulo*/

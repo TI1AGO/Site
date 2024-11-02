@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>TiviTech</title> <!-- titulo --> 
+<meta chartset="UTF-8"> <!-- configurações de exibição do site -->
+<meta name="keywords" content="site, primeiro, aprendendo">
+<meta name="author" content="Ti1ago">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <header>  <!--  cabeçalho-->
+        <div class="estrulogo"> <!-- logo -->
+            <div class="imagemlogo"><a href="https://www.instagram.com/tivitech/" target="_blank"><img src="imagens/logo/logo2.png"  style="height: 70px; border-radius: 5px;"></a></div>
+        </div>
+
+        <div class="menu"> <!-- menu do cabeçalho -->
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5561998603004&text=Olá%20gostaria%20de%20marcar%20um%20orçamento" target="_blank"> <img src="Botões/CONTATOS.png"></a></li>
+                <li><a href="https://www.instagram.com/tivitech/" target="_blank"> <img src="Botões/INSTAGRAM.png"> </a></li>
+                <li><a href="http://127.0.0.1:5500/Nova%20pasta%20(1)/sites%20server%20(1)/saibamais/saibamais.html"><img src="Botões/SAIBA MAIS.png" style="height: 21px;"></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<div class="separartab"> <!--separados-->
+    <div class="tabeladir"></div> <!--Tabelas laterais-->
+
+<div estruta>
+<div class="areaacima">
+    <div class="imagensilustrando">
+        <img src="imagens/imagens/tecnico 3.jpg" alt="jpg">
+        <img src="imagens/imagens/setup1.webp" alt="webp">
+        <img src="imagens/imagens/setup2.webp" alt="jpg">
+        <img src="imagens/imagens/tencnico1.webp" alt="webp">
+        <img src="imagens/imagens/imagem4.jpg" alt="jpg">
+        <img src="imagens/imagens/imagem5.webp" alt="webp">
+
+    </div>
+    <!-- AREA DE EXEMPLO -->
+</div>
+    <div class="area">
+        <div class="textotitulo">
+            <h1>CONTRATE UM DE NOSSOS SEVIÇOS</h1>
+        </div>
+    <div class="textosubtitulo">
+        <p class="formatsub">VOCÊ É NOSSA PRIORIDADE</p>
+
+    </div>
+
+        <!-- TITULO DE SUBTITULO -->
+<div class=imagempreco>
+
+    <img src="imagens/tabela.png" alt="tabela de preço" usemap="#image-map" class="imagemprecodireto">
+    <map name="image-map">
+        <area target="_blank" alt="Problemas adversos" title="Problemas adversos" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20uma%20consultoria%20para%20comprar%20um%20computador!" coords="1000,623,84,543" shape="rect">
+        <area target="_blank" alt="Duvidas" title="Duvidas" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20tirar%20duvidas%20sobre%20um%20problema%20que%20estou%20tendo." coords="998,733,84,652" shape="rect">
+        <area target="_blank" alt="formatacao com backup" title="formatacao com backup" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20formatar%20com%20backup%20do%20meu%20computador." coords="81,764,996,842" shape="rect">
+        <area target="_blank" alt="montagem" title="montagem" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20montar%20um%20computador%20para%20mim." coords="85,878,996,955" shape="rect">
+        <area target="_blank" alt="Limpeza" title="Limpeza" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20fazer%20uma%20limpeza%20no%20meu%20computador." coords="82,993,996,1071" shape="rect">
+        <area target="_blank" alt="formatacao e limpeza" title="formatacao e limpeza" href=" https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20do%20combo%20de%20limpeza%20e%20formata%C3%A7%C3%A3o%20para%20meu%20computador." coords="84,1100,995,1180" shape="rect">
+        <area target="_blank" alt="troca de peca" title="troca de peca" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20comprei%20uma%20pe%C3%A7a%20e%20gostaria%20de%20instalar%20no%20meu%20computador." coords="81,1217,996,1296" shape="rect">
+        <area target="_blank" alt="orcamento" title="orcamento" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento." coords="82,1331,995,1412" shape="rect">
+        <area target="_blank" alt="problemas adversos" title="problemas adversos" href="https://wa.me/+5561998603004?text=Ol%C3%A1%20estou%20tendo%20problemas%20com%20meu%20computador%2C%20pode%20me%20ajudar%3F" coords="85,1455,999,1531" shape="rect">
+        <area target="_blank" alt="agende" title="agende" href="https://www.instagram.com/tivitech/" coords="65,1621,330,1815" shape="rect">
+    </map>
+
+
+    <script>
+        const img = document.querySelector('img[usemap]');
+        const areas = document.querySelectorAll('area');
+
+        // Função para atualizar as coordenadas
+        function updateMapCoords() {
+            const originalWidth = 1080; // Largura original da imagem (ajuste conforme necessário)
+            const scaleFactor = img.offsetWidth / originalWidth;
+
+            areas.forEach(area => {
+                const originalCoords = area.dataset.originalCoords.split(',').map(Number);
+                const newCoords = originalCoords.map(coord => coord * scaleFactor);
+                area.coords = newCoords.join(',');
+            });
+        }
+
+        // Salvar as coordenadas originais no dataset
+        areas.forEach(area => {
+            area.dataset.originalCoords = area.coords;
+        });
+
+        // Atualizar coordenadas ao carregar e redimensionar
+        window.addEventListener('load', updateMapCoords);
+        window.addEventListener('resize', updateMapCoords);
+    </script>
+
+
+</div>
+</div>
+</div>
+
+    <div class="tabeladir"></div><!--Tabelas laterais-->
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
